@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
   styles: [`
     p {
       color: green;
+      padding: 10px;
+      background: lightgreen;
+      border: 1px solid green;
     }
   `]
 })

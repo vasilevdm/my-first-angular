@@ -8,6 +8,15 @@
 <!--        <div class="app-servers"></div>-->
       asd1234
       <app-alerts></app-alerts>
+
+      <button
+      (click)="toggleDetails()">Display Details</button>
+      <p *ngIf="showPassword">Secret Password = tuna</p>
+      <p
+        *ngFor="let click of clicks"
+        [ngStyle]="{background: click > 4 ? 'blue': 'transparent'}"
+        [ngClass]="{white: click > 4}">{{ click }}</p>
+
     </div>
   </div>
 </div>
